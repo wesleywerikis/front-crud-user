@@ -15,9 +15,3 @@ function App() {
 }
 
 export default App;
-
-
-//    <div className="App">
-//      <header className="App-header">
-//      </header>
-//    </div>
