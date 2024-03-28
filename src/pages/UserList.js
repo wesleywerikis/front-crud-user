@@ -18,6 +18,21 @@ const UserList = () => {
         }
     };
 
+    const handleNewUser = () => {
+        // Lógica para cadastrar um novo usuário
+        console.log('Cadastrar novo usuário');
+    };
+
+    const handleDeleteUser = () => {
+        // Lógica para excluir um usuário
+        console.log('Excluir usuário');
+    };
+
+    const handleSearchUser = () => {
+        // Lógica para pesquisar um usuário
+        console.log('Pesquisar usuário');
+    };
+
     return (
         <body>
             <div className="container">
@@ -27,6 +42,11 @@ const UserList = () => {
                             <div className="table-wrapper">
                                 <div className="table-title">
                                     <h2>Lista de <b>Usuários</b></h2>
+                                    <div>
+                                        <button onClick={handleNewUser} className='register-button' >Cadastrar</button>
+                                        <button onClick={handleDeleteUser} className='delete-button' >Excluir</button>
+                                        <button onClick={handleSearchUser} className='search-button' >Pesquisar</button>
+                                    </div>
                                 </div>
                                 <table className='user-table'>
                                     <thead>
@@ -56,5 +76,6 @@ const UserList = () => {
         </body>
     );
 };
+
 
 export default UserList;
